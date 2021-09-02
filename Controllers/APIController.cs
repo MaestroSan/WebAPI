@@ -35,7 +35,7 @@ namespace WebAPI.Controllers
 
         [HttpGet()]
         [Route("[action]/{userId}")]
-        public async Task<ActionResult> GetData([FromRoute] int userId)
+        public async Task<ActionResult> GetUserData([FromRoute] int userId)
         {
             // Return Bad Request if View Model is not valid
             if (!ModelState.IsValid)
